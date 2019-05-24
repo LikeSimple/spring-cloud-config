@@ -17,3 +17,11 @@ spring:
     baseline-on-migrate: true
 server:
   port: 9999
+security:
+  oauth2:
+    authorization:
+      jwt:
+        key-password: www.newtouch.com
+        key-store-password: www.newtouch.com
+        key-store: classpath:jwt.jks
+        key-alias: jwt
