@@ -25,3 +25,8 @@ security:
         key-store-password: www.newtouch.com
         key-store: classpath:jwt.jks
         key-alias: jwt
+---
+spring:
+  profiles: prd
+foo:
+  bar: prd
